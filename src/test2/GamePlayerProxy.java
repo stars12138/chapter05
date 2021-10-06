@@ -18,10 +18,11 @@ public class GamePlayerProxy implements IGamePlayer,IProxy{
     @Override
     public void upgrade() {
         this.iGamePlayer.upgrade();
+        this.count();
     }
 
     @Override
     public void count() {
-        System.out.println("获得金币");
+        System.out.println("升级获得金币");
     }
 }
